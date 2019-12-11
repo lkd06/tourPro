@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+
+
+  <servlet>
+  <servlet-name>main</servlet-name>
+  <servlet-class>com.main.mainServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>main</servlet-name>
+  <url-pattern>/main/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>mem</servlet-name>
+  <servlet-class>com.mem.MemInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>mem</servlet-name>
+  <url-pattern>/member/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>trip</servlet-name>
+  <servlet-class>com.Trip.TripInfoServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>trip</servlet-name>
+  <url-pattern>/travel/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>product</servlet-name>
+  <servlet-class>com.cart.CartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>product</servlet-name>
+  <url-pattern>/carts/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>qna</servlet-name>
+  <servlet-class>com.qna.qnaServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>qna</servlet-name>
+  <url-pattern>/query/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>notice</servlet-name>
+  <servlet-class>com.notice.NoticeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>notice</servlet-name>
+  <url-pattern>/not/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+	<servlet-name>kmtour</servlet-name>
+	<servlet-class>com.project.CommentServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>kmtour</servlet-name>
+	<url-pattern>/kmtour/*</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+	<servlet-name>Image</servlet-name>
+	<servlet-class>com.tourImage.TourImageServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>Image</servlet-name>
+	<url-pattern>/tourImages/*</url-pattern>
+  </servlet-mapping>
+  
+  
+
+</web-app>
